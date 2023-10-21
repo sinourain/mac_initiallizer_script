@@ -61,14 +61,14 @@ echo "Setting the Ruby environment and other development tools."
 echo "------------------------------"
 echo ""
 # Check first if git is installed, it's a requirement for the following installations.
-if [[ ! $(which git) ]]; then
-  echo "Git is not installed. It is not possible to install Rbenv, nodenv, and other package managers"
-else
-  sh scripts/rbenv.sh
-  sh scripts/jenv.sh
-  sh scripts/nodenv.sh
-  sh scripts/phantomenv.sh
-fi
+# if [[ ! $(which git) ]]; then
+#   echo "Git is not installed. It is not possible to install Rbenv, nodenv, and other package managers"
+# else
+#   sh scripts/rbenv.sh
+#   sh scripts/jenv.sh
+#   sh scripts/nodenv.sh
+#   sh scripts/phantomenv.sh
+# fi
 
 echo ""
 echo "------------------------------"
@@ -91,14 +91,14 @@ echo "------------------------------"
 echo ""
 sudo sh scripts/defaults.sh
 
-# Pgsql info
-echo
-echo "########################################################"
-echo "Please install Postgres app from https://postgresapp.com"
-echo "########################################################"
-echo
+# # Pgsql info
+# echo
+# echo "########################################################"
+# echo "Please install Postgres app from https://postgresapp.com"
+# echo "########################################################"
+# echo
 
-echo "------------------------------"
-echo "Completed the init configuration for your mac 😎."
-echo "Restart your computer to ensure all updates take effect"
-echo "------------------------------"
+# echo "------------------------------"
+# echo "Completed the init configuration for your mac 😎."
+# echo "Restart your computer to ensure all updates take effect"
+# echo "------------------------------"

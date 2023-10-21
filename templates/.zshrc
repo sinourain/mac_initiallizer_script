@@ -26,10 +26,10 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # Install missing plugins
 if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-      echo; zplug install
-  fi
+printf "Install? [y/N]: "
+if read -q; then
+    echo; zplug install
+fi
 fi
 
 # Load the plugins in the terminal
@@ -69,3 +69,5 @@ export SAVEHIST=200000
 export HISTFILE=~/.zsh_history
 setopt inc_append_history
 setopt share_history
+
+surgery-connect-web-1
